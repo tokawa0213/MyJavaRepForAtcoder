@@ -12,13 +12,10 @@ public class Main {
         }
         Scanner sc = new Scanner(System.in);
         String target_string = sc.next();
-
-        for(int i = 0;i < target_string.length(); i++){
-            // 019と19が同じ扱いになってしまうので。。。
-            if(!target_string.substring(i,target_string.length()).substring(0,1).equals("0")){
-                BigInteger target = new BigInteger(target_string.substring(i,target_string.length()));
-                remainder_mapping.put(target.remainder(BigInteger.valueOf(2019)).intValue(),remainder_mapping.get((target.remainder(BigInteger.valueOf(2019))).intValue())+1);
-            }
+        int remainder = 0;
+        int pow_of_ten = 1;
+        for(int i = target_string.length()-1 ;i >= 0; i--){
+            
         }
         int answer = 0;
         for(int i = 0;i < 2019;i++){
@@ -30,6 +27,7 @@ public class Main {
                 }
             }
         }
+        System.out.println(remainder_mapping);
         System.out.println(answer);
     }
 }
