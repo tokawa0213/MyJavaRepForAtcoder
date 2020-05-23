@@ -1,9 +1,25 @@
-import math
-A,B,H,M = map(int,input().split())
-H_pos = H/12 + M/720
-M_pos = M/60
-deg = 360*(H_pos-M_pos)
-if deg > 180: deg = 360-deg
-rad = math.radians(deg)
-co = math.cos(rad)
-print("{:.9f}".format(math.sqrt(A**2+B**2-2*A*B*co)))
+from math import gcd
+from collections import defaultdict
+mod=10**9+7
+S=int(input())
+mp=defaultdict(lambda:[0,0])
+O=0
+for _ in range(S):
+    a,b=map(int,input().split())
+    if a==b==0:O+=1
+    else:
+        g=gcd(a,b)
+        a//=g
+        b//=g
+        if a<0 or a==0<b:
+            a,b=-a,-b
+        f=0
+        if b<0:
+            a,b,f=-b,a,1
+        mp[(a,b)][f]+=1
+ans=1
+print(mp)
+for k in mp:
+    x,y=mp[k];
+    ans=ans*(pow(2,x,mod)+pow(2,y,mod)-1)%mod
+print((ans+O-1)%mod)

@@ -1,4 +1,4 @@
-### First week(4/22~4/28)
+### First week(4/21~4/28)
 * A : 2AC
 * B : 2AC
 * C : 4AC
@@ -13,11 +13,16 @@
 * B : 0AC
 * C : 6AC
 * D : AC
-### Fourth week(5/13~5/20)
+### Fourth week(5/14~5/21)
 * A : 0AC
 * B : 0AC
-* C : AC
-* D : AC
+* C : 6AC
+* D : 0AC
+### Fifth week(5/22~5/29)
+* A : 0AC
+* B : 0AC
+* C : 6AC
+* D : 0AC
 ### Total progress
 * A :
 * B :
