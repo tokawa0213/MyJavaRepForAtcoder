@@ -9,10 +9,12 @@ public class Main{
         for(int i = 0; i < N;i++){
             l.add(Integer.parseInt(sc.next()));
         }
-        int masu = -1;
-        for(Integer e : l){
-            if(masu >= e-1){
-                masu = e;
+        int previous = Integer.MIN_VALUE;
+        for(Integer now : l){
+            if(previous <= now - 1){
+                previous = now - 1;
+            }else if(previous <= now){
+                previous = now;
             }else{
                 System.out.println("No");
                 return;
