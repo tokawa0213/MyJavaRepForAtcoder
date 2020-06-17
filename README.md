@@ -30,7 +30,12 @@
 * D : 0AC
 ### Seventh week(6/5~6/11)
 * A : 0AC
-* B : 0AC
+* B : 3AC
+* C : 2AC
+* D : 0AC
+### Eighth week(6/12~6/18)
+* A : 0AC
+* B : 5AC
 * C : 0AC
 * D : 0AC
 ### Total progress
