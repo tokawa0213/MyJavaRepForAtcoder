@@ -38,8 +38,13 @@
 * B : 5AC
 * C : 0AC
 * D : 0AC
-### Total progress
-* A :
-* B :
-* C :
-* D :
+### Ninth week(6/19~6/25)
+* A : 0AC
+* B : 5AC
+* C : 0AC
+* D : 0AC
+### Tenth week(6/26~7/2)
+* A : 0AC
+* B : 0AC
+* C : 0AC
+* D : 0AC
